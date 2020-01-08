@@ -1,12 +1,17 @@
 <template>
   <div>
-
+    <router-view></router-view>
+    <FooterGuide></FooterGuide>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+  import FooterGuide from './components/FooterGuide/FooterGuider'
   export default {
-    name: 'App'
+    name: 'App',
+    components: {
+      FooterGuide
+    }
   }
 </script>
 
